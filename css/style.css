@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&family=Righteous&family=Roboto+Condensed:wght@300&family=Ubuntu+Condensed&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'lato';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+background: url(../images/bodyimage.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+height: 100vh;
+}
+
+.navbar{
+    overflow: hidden;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+}
+.sticky.nav-link{
+    background: white;
+}
+
+.navbar-brand{
+    font-family: freestyle script;
+    font-size: 25px;
+    letter-spacing: 11px;
+    font-weight: bolder;
+    color: black !important;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 4px  rgb(7, 40, 64);
+}
+
+.nav-link{
+    font-family: roboto condensed;
+    text-transform: uppercase;
+    color: black !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.nav-link:hover{
+    color: rgb(7,40,64) !important;
+    transform: scale(1.2);
+}
+
+.active .nav-link{
+    color: rgb(7, 40, 64) !important;
+    transform: scale(1.2);
+}
+
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: white;
+    color: rgb(7, 40, 64);
+    border-radius: 25px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 4px  rgb(7, 40, 64);
+    font-family: roboto condensed;
+    text-transform: uppercase;
+}
+
+.menu-right-btn:hover{
+    background-color: rgb(7,40,64);
+    color: white;
+    transform: scale(1.1);
+}
+
+header h1{
+    font-size: 48px;
+    font-family: 'righteous';
+    letter-spacing: 30px;
+    text-align: center;
+    padding-top: 350px;
+    text-shadow: 2px 2px 4px rgb(7, 40, 64);
+}
+
+/*Section-1*/
+
+.section-1 .heading-1{
+    padding-top: 5%;
+    margin-bottom: 5%;
+    letter-spacing: 21px;
+    text-transform: uppercase;
+    font-family: roboto condensed;
+}
+
+.section-1 .card:hover{
+    transform: scale(1.1)
+}
+
+.section-1 .card-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+.section-1 .card-text{
+    color: rgb(0,0,0.59);
+}
+
+.section-1 .card{
+    width: 15rem;
+    margin-bottom: 18%;
+}
+
+.section-1 .zoom{
+    overflow: hidden;
+}
+
+.section-1 .zoom img{
+    transition: all 1.5s ease;
+} 
+
+.section-1 .card:hover img{
+    transform: scale(1.5);
+}
+
+
+/*Section-2*/
+
+.section-2 .container-fluid{
+    background-image: url(../images/connect.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.section-2 .heading-1{
+    color: seashell;
+    font-family: 'righteous';
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section-2 .card{
+    background: transparent;
+    border: 0;
+    width: 15rem;
+}
+
+.section-2 .card:hover{
+    transform: scale(1.1)
+}
+
+.section-2 .card a > i{
+    color: white;
+    font-size: 50px;
+    
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.section-2 .card-title{
+    font-family: 'roboto condensed';
+    color: white;
+    text-shadow:0 0 25px blue;
+    font-size: 40px;
+}
+.section-2 .card-text{
+    color: whitesmoke;
+    margin-bottom:5%;
+}
+
+/*About me*/
+
+.section-3 .row .col-md-5{
+    margin-top: 8%;
+}
+
+.section-3 .row .col-md-7:hover{
+    transform: scale(1.1);
+}
+
+.section-3 h1{
+    letter-spacing: 21px;
+    text-transform: uppercase;
+    font-family: roboto condensed;
+}
+
+.section-3 p{
+    color: rgb(7,40,64);
+    font-size: 18px;
+}
+
+.section-3 .site-btn1{
+    background:transparent;
+    color: rgb(7, 40, 64);
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 2px solid gray;
+    margin-bottom: 15%;
+    
+}
+
+.section-3 .site-btn1:hover{
+    background-color: rgb(7,40,64);
+    color: whitesmoke;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px  rgb(7, 40, 64);
+}
+
+
+
+/* Footer Area */ 
+
+footer.footer-area{
+    padding: 0px 0;
+}
+
+footer.footer-area .social h5{
+    font-family: 'roboto condensed';
+    color: black;
+
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 7px;
+    color: black;
+    text-shadow: 0 0 25px blue;
+
+}
+
+footer.footer-area .social a:hover > i{
+    color: rgb(7, 40, 64);
+    transform: scale(2.2);
+}
+/* End Footer */ 
+
+@media screen and (max-width:768px){
+    .section-1 .card{
+        width: 10rem;
+    }
+    .section-1 .card-text{
+        display: none;
+    }
+    .section-1 .card-title{
+        font-size: 15px;
+    }
+    .section-2 .card{
+        width: 12rem;
+    }
+    .section-2 .card a > i{
+        color: white;
+        font-size: 40px;
+        
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    
+    .section-2 .card-title{
+        font-size: 30px;
+    }
+    .section-2 .card-text{
+        font-size: 12px;
+    }
+    
+    .section-3 p{
+        color: rgb(7,40,64);
+        font-size: 18px;
+    }
+}
+
