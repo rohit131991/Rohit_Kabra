@@ -13,74 +13,72 @@
 
     <!--Navigation-->
     <header>
-                <div id="navbar" class="navbar navbar-expand-lg navbar-light">
-                    <a href="#" class="navbar-brand">ROHIT KABRA</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collpase" data-target="#navbarmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse "></div>
-                    <div class="collapse navbar-collapse" id="navbarmenu">
-                        <ul class="navbar-nav mr-auto">
-                            <li class ="nav-item active">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#blog" class="nav-link">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <button class="btn menu-right-btn border" type="submit">
-                                Resume
-                            </button>
-                        </form>
-                    </div>
-        
-                </div>
-                <h1>ROHIT KABRA</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto">
+                <li class ="nav-item active">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <button class="btn menu-right-btn border" type="submit">
+                    Resume
+                </button>
+                </form>
+            </div>
+          </nav>
+          <h1>Rohit Kabra</h1>
+          
+          <h4>Data Analyst</h4>
     </header>
 
     <main>
 
-
 <!--About me-->
-        <div id="about" class="section-3 bg-light ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <img src="images/banner1.png" alt="about me" width="490">
-                     </div>
-                     <div class="col-md-5">
-                         <h1>Rohit Kabra</h1>
-                         <p class=para>
-                            I come from a very reputed family from Mumbai, India.<br>
-                            My Desire to acheive the American Dream, got me<br>
-                            to the United States of America in January 2020. I took<br>
-                            the first step by enrolling in the masters program at <b>New<br>
-                            Jersey Institute of Technology, Newark, NJ</b> with a major<br>
-                            in Information System.
-                        </p>
-                        <p class=para>
-                            Being part of such a prestigious organization I was<br>
-                            introduced to various courses in data analysis which drove<br>
-                            my interest and hence I decided to pursue my career in the same field.    
-                        </p>
-                        <input type="button" value="Learn More" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
+<div id="about" class="section-3">
+    <div class="container">
+        <div class="row">
+            
+            
+             <div class="col-md-6">
+                 <h1>About me</h1>
+                 <p class=para>
+                    I come from a very reputed family from Mumbai, India.
+                        My Desire to
+                        acheive the American Dream, got me
+                        to the United States of America in 
+                        January 2020. I took
+                        the first step by enrolling in the masters program at <b>New
+                        Jersey Institute of Technology, Newark, NJ</b> with a major
+                        in Information System.
+                    </p>
+                    <p class=para>
+                        Being part of such a prestigious organization I was
+                        introduced to various courses<span id="dots">...</span><span id="more"> in data analysis which drove
+                        my interest and hence I decided to pursue my career in the
+                        same field.</span></p>
+    <button onclick="myFunction()" id="myBtn">Learn more</button>
 
-
-                     </div>
-                </div>
-            </div>
+             </div>
         </div>
+    </div>
+</div>
 
 
 
@@ -154,7 +152,7 @@
 
 
         <!--Contact-->
-        <div id="contact" class="section-2">
+        <div id="contact" class="section-2 bg-dark">
         <div class="container-fluid">
             <div class="text-center">
                 <h1 class="heading-1">Lets Connect</h1>
@@ -234,23 +232,32 @@
     </footer>
 
 
-    <script>
-        window.onscroll = function() {myFunction()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-    </script>
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--Change color on scroll-->
+<script>
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled',$(this).scrollTop() > 0);
+        
+    });
+</script>
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Learn more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
 </body>
 </html>

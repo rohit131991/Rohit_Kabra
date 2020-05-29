@@ -9,45 +9,61 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
 header{
-background: url(../images/bodyimage.jpg);
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-height: 100vh;
+    background: url(../images/laptop.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 0;
+} 
+header h1{
+    color: seashell;
+    font-size: 48px;
+    font-family: 'cinzel';
+    letter-spacing: 21px;
+    padding-left: 55%;
+    padding-top: 20%;
+}
+header h4{
+    color: white;
+    font-size: 18px;
+    font-family: 'cinzel';
+    letter-spacing: 10px;
+    padding-left: 63%;
+    
 }
 
-.navbar{
+
+.navbar {
     overflow: hidden;
-}
-.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    background: black;
-}
-.sticky.nav-link{
-    background: white;
+    z-index: 9999;
+    line-height: 1;
+    background: transparent;
 }
 
-.navbar-brand{
-    font-family: freestyle script;
-    font-size: 25px;
-    letter-spacing: 11px;
-    font-weight: bolder;
-    color: black !important;
-    border: 2px solid grey;
-    box-shadow: 2px 2px 4px  rgb(7, 40, 64);
+.bg-dark{
+    background: transparent !important;
 }
+
+.bg-dark.scrolled {
+    background: rgba(73, 74, 78, 0.479) !important;
+}
+
+
+
 
 .nav-link{
     font-family: roboto condensed;
     text-transform: uppercase;
-    color: black !important;
+    color: white !important;
     font-size: 20px;
     font-weight: bold;
     margin: 15px;
+
 }
 
 .nav-link:hover{
@@ -56,7 +72,7 @@ height: 100vh;
 }
 
 .active .nav-link{
-    color: rgb(7, 40, 64) !important;
+    color: white(7, 40, 64) !important;
     transform: scale(1.2);
 }
 
@@ -78,23 +94,23 @@ height: 100vh;
     transform: scale(1.1);
 }
 
-header h1{
-    font-size: 48px;
-    font-family: 'righteous';
-    letter-spacing: 30px;
-    text-align: center;
-    padding-top: 350px;
-    text-shadow: 2px 2px 4px rgb(7, 40, 64);
+/*Section-1*/
+.section-1{
+    background: url(../images/laptop.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
 
-/*Section-1*/
 
 .section-1 .heading-1{
-    padding-top: 5%;
+    padding-top: 10%;
     margin-bottom: 5%;
     letter-spacing: 21px;
     text-transform: uppercase;
     font-family: roboto condensed;
+    color: seashell;
 }
 
 .section-1 .card:hover{
@@ -129,7 +145,6 @@ header h1{
 /*Section-2*/
 
 .section-2 .container-fluid{
-    background-image: url(../images/connect.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -137,7 +152,7 @@ header h1{
 }
 
 .section-2 .heading-1{
-    color: seashell;
+    color: black;
     font-family: 'righteous';
     padding-top: 5%;
     padding-bottom: 5%;
@@ -154,31 +169,29 @@ header h1{
 }
 
 .section-2 .card a > i{
-    color: white;
+    color: black;
     font-size: 50px;
     
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .section-2 .card-title{
     font-family: 'roboto condensed';
-    color: white;
-    text-shadow:0 0 25px blue;
+    color: black;
     font-size: 40px;
 }
 .section-2 .card-text{
-    color: whitesmoke;
+    color: black;
     margin-bottom:5%;
 }
 
 /*About me*/
 
-.section-3 .row .col-md-5{
-    margin-top: 8%;
-}
 
-.section-3 .row .col-md-7:hover{
-    transform: scale(1.1);
+.section-3 .row .col-md-6{
+    margin-top: 8%;
+    margin-bottom: 1%;
+    margin-left: 60%;
+    border-radius: 15px;  
 }
 
 .section-3 h1{
@@ -188,11 +201,11 @@ header h1{
 }
 
 .section-3 p{
-    color: rgb(7,40,64);
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 
-.section-3 .site-btn1{
+#myBtn{
     background:transparent;
     color: rgb(7, 40, 64);
     font-weight: bolder;
@@ -202,20 +215,25 @@ header h1{
     
 }
 
-.section-3 .site-btn1:hover{
+#myBtn:hover{
     background-color: rgb(7,40,64);
     color: whitesmoke;
     transform: scale(1.1);
     box-shadow: 2px 2px 4px  rgb(7, 40, 64);
 }
 
+#more {display: none;}
 
 
 /* Footer Area */ 
 
 footer.footer-area{
-    padding: 0px 0;
+    padding: 0 0;
+    margin-bottom: 0;
+    
+    background: rgba(227, 236, 230, 0.60);
 }
+
 
 footer.footer-area .social h5{
     font-family: 'roboto condensed';
@@ -238,6 +256,51 @@ footer.footer-area .social a:hover > i{
 /* End Footer */ 
 
 @media screen and (max-width:768px){
+
+    header{
+        background: url(../images/blog.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 80vh;
+        padding: 0;
+        width: 100vw;
+        margin-right: 0;
+    }
+
+    header h4{
+        font-size: 14px;
+        font-family: 'cinzel';
+        letter-spacing: 10px;
+        padding-left: 46%;
+        
+    }
+
+    
+    .active .nav-link{
+        transform: none;
+    }
+
+    .nav-link{
+        font-size: 15px;
+        margin: 5px;
+        text-align: left;
+    }
+
+    .nav-link:hover{
+        transform: none;
+    }
+
+    .menu-right-btn{
+    display: none;
+    }
+
+    .menu-right-btn:hover{
+        background-color: rgb(7,40,64);
+        color: white;
+        transform: scale(1.1);
+    }
+    
     .section-1 .card{
         width: 10rem;
     }
@@ -268,5 +331,15 @@ footer.footer-area .social a:hover > i{
         color: rgb(7,40,64);
         font-size: 18px;
     }
+    .section-3 .row .col-md-6{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 42%;
+        border-radius: 15px;
+    }
+    .section-3{
+        height: 80vh;
+    }
+    
 }
 
